@@ -19,7 +19,15 @@ This structure enables the management of both compliance policies and operator l
 
 ##  Repository Structure
 
-```bash operators/ ├── gitops/ │ ├── manifests/ # YAML manifests for the GitOps Operator │ ├── generator.yaml # Policy Generator definition │ ├── kustomization.yaml # Kustomize entrypoint enabling the Policy Generator │ └── placements/ # Placement and PlacementBinding definitions └── cert-manager/ # Example of another operator policy structure (work in progress) ```
+```text
+operators/
+├── gitops/
+│   ├── manifests/               # YAML manifests for the GitOps Operator
+│   ├── generator.yaml           # Policy Generator definition
+│   ├── kustomization.yaml       # Kustomize entrypoint enabling the Policy Generator
+│   └── placements/              # Placement and PlacementBinding definitions
+└── cert-manager/                # Example of another operator policy structure (work in progress)
+```
 
 
 ## Roadmap
